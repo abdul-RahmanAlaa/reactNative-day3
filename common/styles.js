@@ -123,9 +123,9 @@ module.exports = StyleSheet.create({
     marginRight: -10,
   },
   userSVG: {
-    transform: "rotate(270deg)",
     width: "100%",
     height: "100%",
+    
   },
   apiUsersHeader: {
     margin: 15,
