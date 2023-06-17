@@ -23,8 +23,9 @@ const Users = ({ navigation }) => {
 
   const searchData = (input) => {
     const newData = users.filter((user) => {
+      const lowerCaseUser = user.name.toLocaleLowerCase();
       const lowerCaseInput = input.toLocaleLowerCase();
-      return user.name.indexOf(lowerCaseInput) > -1;
+      return lowerCaseUser.indexOf(lowerCaseInput) > -1;
     });
     setFilteredUsers(newData);
   };
